@@ -83,7 +83,7 @@ class App extends Component {
       "cart": <Cart />,
       "login": <LoginPage logIn={this.logIn} />,
       "register": <RegisterPage register={this.register.bind(this)}/>,
-      "dashboard": <Dashboard />
+      "dashboard": <Dashboard apitoken={this.state.apitoken}/>
     }
 
     return (
